@@ -221,6 +221,8 @@ class Run extends Command
      */
     public function execute(InputInterface $input, OutputInterface $output)
     {
+        exit(1);
+
         $this->ensureCurlIsAvailable();
         $this->options = $input->getOptions();
         $this->output = $output;
